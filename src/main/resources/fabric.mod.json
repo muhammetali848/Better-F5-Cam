@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "better5",
+  "version": "${version}",
+  "name": "Better5",
+  "description": "Hold down F5 and use the mouse scroll wheel to zoom the third-person camera.",
+  "authors": ["LL4İ"],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/f5-zoom"
+  },
+  "license": "MIT",
+  "icon": "assets/better5/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.github.gorilla.better5.client.Better5Client"
+    ]
+  },
+  "mixins": [
+    "better5.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
